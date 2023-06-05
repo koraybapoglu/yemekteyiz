@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Sipariş Sitesi</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS dosyasını ekleyin -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .list-group-item.active {
+      background-color: green;
+      border-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background-color:#08a703; color:white; text-align: center;">Yemekteyiz</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="arkakısım.html" class="list-group-item list-group-item-action active">Ana Sayfa</a>
+          <a href="ürünekleislemleri.html" class="list-group-item list-group-item-action">Ürün Ekle</a>
+          <a href="ürüngüncelleislemleri.html" class="list-group-item list-group-item-action">Ürün Güncelle</a>
+          <a href="ürüncikarislemleri.html" class="list-group-item list-group-item-action">Ürün Sil</a>
+          <a href="ayarlar.html" class="list-group-item list-group-item-action">Ayarlar</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <!-- İçerik buraya gelebilir -->
+        <h2>Ürün Silme</h2>
+        <div class="form-group">
+          <label for="urunListesi">Silinecek Ürün:</label>
+          <select id="urunListesi" class="form-control">
+            <option value="urun1">Ürün 1</option>
+            <option value="urun2">Ürün 2</option>
+            <option value="urun3">Ürün 3</option>
+            <!-- Diğer ürünleri buraya ekleyin -->
+          </select>
+        </div>
+        <button id="silButton" class="btn btn-danger">Ürünü Sil</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS dosyalarını ekleyin -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

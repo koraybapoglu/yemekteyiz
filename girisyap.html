@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş Yap</title>
+  <!-- Bootstrap CSS dosyasını ekleyin -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background-color:#08a703; color:white; text-align: center;">Yemekteyiz</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-container">
+          <h2 class="text-center">Giriş Yap</h2>
+          <form action="arkakısım.html" method="post">
+            <div class="form-group">
+              <label for="username">Kullanıcı Adı</label>
+              <input type="text" class="form-control" id="username" placeholder="Kullanıcı adınızı girin">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon Numarası</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Telefon numaranızı girin">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #08a703;">Giriş Yap</button>
+            <div class="text-center mt-3">
+              <a href="#" data-toggle="modal" data-target="#forgotCredentialsModal">Şifremi Unuttum !</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kullanıcı Adı veya Telefon Numarası Unutuldu mu? Modal -->
+  <div class="modal fade" id="forgotCredentialsModal" tabindex="-1" role="dialog" aria-labelledby="forgotCredentialsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgotCredentialsModalLabel">Şifremi Unuttum</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="forgotEmail">E-posta Adresi</label>
+              <input type="email" class="form-control" id="forgotEmail" placeholder="E-posta adresinizi girin">
+            </div>
+            <div class="form-group">
+              <label for="forgotPhone">Kayıtlı Telefon Numarası</label>
+              <input type="tel" class="form-control" id="forgotPhone" placeholder="Kayıtlı telefon numaranızı girin">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Doğrula</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS dosyalarını ekleyin -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

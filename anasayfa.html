@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/style.css">
+  <title>Yemek Sipariş Sitesi</title>
+  <!-- Bootstrap CSS dosyasını ekleyin -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Orta hizalama için düzenlemeler */
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* Yemekteyiz yazısı için düzenlemeler */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-text {
+      margin-right: 10px;
+    }
+
+    .header-buttons {
+      display: flex;
+    }
+
+    .header-buttons .btn {
+      margin-left: 10px;
+    }
+    h1 {
+    margin-left: 550px;
+    }
+    .header-buttons {
+    margin-right: 20px;
+    }
+    .aciklama{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="header">
+    <h1 class="text-center" style="background-color: azure;">Yemekteyiz</h1>
+    <div class="header-buttons ml-auto">
+      <a href="üyeol.html" class="btn btn-primary" style="background-color: #08a703;">Üye Ol</a>
+      <a href="girisyap.html" class="btn btn-primary" style="background-color: #08a703;">Giriş Yap</a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="anasayfa.html">Anasayfa</a></li>
+      <li><a href="index.html">Menü</a></li>
+      <li><a href="siparisver.html">Sipariş Ver</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="menu">
+      <!-- Menü içeriği -->
+    </div>
+
+    <section id="order-summary">
+      <!-- Sipariş özeti içeriği -->
+    </section>
+  </main>
+
+  <section id="about">
+    <h2 style="text-align: center;">Sitenin Tanıtımı</h2>
+    <p class="aciklama">
+      Yemekteyiz, en lezzetli yemekleri sizlere sunan bir restoran olarak hizmet vermektedir.
+      Taze ve kaliteli malzemelerle hazırlanan yemeklerimiz, damak tadınıza hitap edecek özel tariflerle buluşuyor.
+    </p>
+    <p class="aciklama">
+      Geniş menü seçeneklerimiz arasında hamburger, pizza, salata, steak gibi birbirinden lezzetli seçenekler bulunmaktadır.
+      Siz de damak zevkinize uygun bir seçim yapabilir ve lezzetli yemeklerimizin tadını çıkarabilirsiniz.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2023 Yemekteyiz. Tüm hakları saklıdır.
+  </footer>
+
+  <!-- Bootstrap JS dosyalarını ekleyin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

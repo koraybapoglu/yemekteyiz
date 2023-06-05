@@ -1,0 +1,146 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* Başlık ve alt başlık stilleri */
+  h1, h2, h3 {
+    color: #08a703;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #eaeaea;
+    margin: 0;
+  }
+  
+  /* Navigasyon menüsü stilleri */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Ana bölüm stilleri */
+  main {
+    margin: 20px;
+  }
+  
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Menü öğeleri stilleri */
+  .menu-item {
+    width: 23%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+    background-color: #fff;
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .menu-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-item img {
+    width: 100%;
+  height: 150px; /* İstediğiniz boyutu burada belirleyebilirsiniz */
+  object-fit: contain;
+  }
+  
+  .menu-item h3 {
+    margin-bottom: 5px;
+  }
+  
+  .menu-item p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item button {
+    background-color: #38a804;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-item button:hover {
+    background-color: #555;
+  }
+  
+  /* Sipariş özeti stil */
+  #order-summary {
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #cart {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  #cart li button {
+    background-color: #cc0000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer stil */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+  }
+  

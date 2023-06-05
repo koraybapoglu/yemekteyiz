@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Sipariş Sitesi</title>
+  <link rel="stylesheet" href="Css/style.css">
+  <style>
+    /* Orta hizalama için düzenlemeler */
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* İçeriklerin arasındaki boşluklar için düzenlemeler */
+    #menu {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #order-summary {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    /* İletişim bölümü düzenlemeleri */
+    #contact {
+      margin-right: auto;
+      margin-left: auto;
+      width: 500px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+
+    #contact h2 {
+      margin-bottom: 10px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    #contact form textarea {
+      height: 100px;
+    }
+
+    #contact form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    #contact form button:hover {
+      background-color: #45a049;
+    }
+    #about {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Yemekteyiz</h1>
+  <nav>
+    <ul>
+      <li><a href="anasayfa.html">Anasayfa</a></li>
+      <li><a href="index.html">Menü</a></li>
+      <li><a href="siparisver.html">Sipariş Ver</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="menu">
+      <!-- Menü içeriği -->
+    </div>
+
+    <section id="order-summary">
+      <!-- Sipariş özeti içeriği -->
+    </section>
+  </main>
+  <section id="about">
+    <h2>Yemekteyiz</h2>
+    <p>
+      Yemekteyiz, en lezzetli yemekleri sizlere sunan bir restoran olarak hizmet vermektedir.
+      Taze ve kaliteli malzemelerle hazırlanan yemeklerimiz, damak tadınıza hitap edecek özel tariflerle buluşuyor.
+    </p>
+    <img src="https://example.com/images/about-image.jpg" alt="Yemeklerimiz">
+    <p>
+      Geniş menü seçeneklerimiz arasında hamburger, pizza, salata, steak gibi birbirinden lezzetli seçenekler bulunmaktadır.
+      Siz de damak zevkinize uygun bir seçim yapabilir ve lezzetli yemeklerimizin tadını çıkarabilirsiniz.
+    </p>
+  </section>
+  <section id="contact">
+    <h2>İletişim</h2>
+    <form>
+      <input type="text" name="name" placeholder="Ad Soyad" required>
+      <input type="email" name="email" placeholder="E-posta" required>
+      <textarea name="message" placeholder="Mesajınız" required></textarea>
+      <button>Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2023 Yemekteyiz. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>

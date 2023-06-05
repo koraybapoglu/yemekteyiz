@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yemek Sipariş Sitesi</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS dosyasını ekleyin -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .list-group-item.active {
+      background-color: green;
+      border-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background-color:#08a703; color:white; text-align: center;">Yemekteyiz</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="arkakısım.html" class="list-group-item list-group-item-action">Ana Sayfa</a>
+          <a href="ürünislemlerisayfa.html" class="list-group-item list-group-item-action">Ürün İşlemleri</a>
+          <a href="siparisislemleri.html" class="list-group-item list-group-item-action">Sipariş İşlemleri</a>
+          <a href="#" class="list-group-item list-group-item-action">Hakkımızda</a>
+          <a href="#" class="list-group-item list-group-item-action">İletişim</a>
+          <a href="ayarlar.html" class="list-group-item list-group-item-action active">Ayarlar</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <!-- İçerik buraya gelebilir -->
+        <h2>Şifre Güncelleme</h2>
+        <div class="form-group">
+          <label for="eskiSifre">Eski Şifre:</label>
+          <input type="password" class="form-control" id="eskiSifre" placeholder="Eski şifrenizi girin">
+        </div>
+        <div class="form-group">
+          <label for="yeniSifre">Yeni Şifre:</label>
+          <input type="password" class="form-control" id="yeniSifre" placeholder="Yeni şifrenizi girin">
+        </div>
+        <div class="form-group">
+          <label for="yeniSifreTekrar">Yeni Şifre (Tekrar):</label>
+          <input type="password" class="form-control" id="yeniSifreTekrar" placeholder="Yeni şifrenizi tekrar girin">
+        </div>
+        <button id="guncelleButton" class="btn btn-primary">Şifreyi Güncelle</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS dosyalarını ekleyin -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
